@@ -1,0 +1,288 @@
+doctype html
+html(lang='tr')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        meta(name='description' content='')
+        meta(name='keywords' content='')
+        meta(name='author' content='')
+        title Deliver | Our Blog
+        <!-- Normalize & Grid -->
+        link(type='text/css' rel='stylesheet' href='styles/normalize.css')
+        link(type='text/css' rel='stylesheet' href='styles/grid.css')
+        <!-- Fonts -->
+        link(href='https://fonts.googleapis.com/css?family=Pacifico&amp;subset=latin-ext' rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Roboto:100,300&amp;subset=latin-ext' rel='stylesheet')
+        link(href='fonts/MyFontsWebfontsKit.css' rel='stylesheet')
+        <!-- FontAwesome -->
+        link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+        <!-- Css -->
+        link(type='text/css' rel='stylesheet' href='styles/main.css')
+        <!-- Favicon -->
+        link(rel='icon' href='favicon.ico' type='image/x-icon')
+        link(rel='shortcut icon' href='favicon.ico' type='image/x-icon')
+    body
+        <!-- HEADER START -->
+        header
+            div.container
+                div.row
+                    div.col-xs-12.col-sm-12.col-md-12.col-lg-12
+                        div.header Deliver
+                            a(href='index.html')
+                                div.social-icon
+                                    i(class="fa fa-rss" aria-hidden="true")
+                            a(href='http://facebook.com')
+                                div.social-icon
+                                    i(class="fa fa-facebook" aria-hidden="true")
+                            a(href='http://twitter.com')
+                                div.social-icon
+                                    i(class="fa fa-twitter" aria-hidden="true")
+        <!-- HEADER END -->
+
+        <!-- NAV START -->
+        div.container
+            nav
+                a(class='nav' href='index.html') HOME
+                a(class='nav' href='portfolio.html') PORTFOLIO
+                a(class='nav' href='about.html') ABOUT
+                a(class='nav' href='services.html') SERVICES
+                a(class='nav' href='archive.html') ARCHIVE
+                a(class='nav light-green' href='blog.html') BLOG
+                a(class='nav' href='other-pages.html') OTHER PAGES
+                a(class='nav' href='contact-us.html') CONTACT US
+                i(class="fa fa-search" aria-hidden="true" onclick='searchinput()')
+                input(type="hidden" id="search")
+        <!-- NAV END -->
+
+        <!-- PAGE TITLE START -->
+        div.container-fluid.page-title
+            h1 OUR BLOG
+        <!-- PAGE TITLE END -->
+
+
+        <!-- CONTENT START -->
+        div.container
+            div.row
+                div.col-md-8
+                    div.blog-post
+                        <!-- SLIDER START -->
+                        div.slider-container
+                            <!-- IMAGES -->
+                            div.slideshow
+                                img(src='images/blog-post-1.png' width='100%')
+                            div.slideshow
+                                img(src='images/blog-post-2.png' width='100%')
+                            div.slideshow
+                                img(src='images/slider-1.png' width='100%')
+                            div.slideshow
+                                img(src='images/slider-2.png'  width='100%')
+
+                            <!-- THE DOTS/CIRCLES -->
+                            div.slider-dot
+                                span(class='dot' onclick='slidedot(1)')
+                                span(class='dot' onclick='slidedot(2)')
+                                span(class='dot' onclick='slidedot(3)')
+                                span(class='dot' onclick='slidedot(4)')
+                        <!-- SLIDER END -->
+
+
+                        h3 7 STRATEGIES TO MARKET YOUR BUSINESS ONLINE
+                        div.blog-post-info
+                            img(src='images/calendar.png')
+                            p JULY 3, 2013
+                        div.blog-post-info
+                            img(src='images/author.png')
+                            p MICHAEL REIMER
+                        div.blog-post-info
+                            img(src='images/category.png')
+                            p MARKETING, NEWS
+                        div.blog-post-info
+                            img(src='images/comment.png')
+                            p 2 COMMENTS
+                        p.my-p30 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nisi eget lectus iaculis congue. Nullam eleifend congue turpis, vel scelerisque massa fermentum ac ...
+
+
+                    div.blog-post
+                        img(src='images/blog-post-2.png')
+                        h3 BASIC POST WITH FEATURED IMAGE
+                        div.blog-post-info
+                            img(src='images/calendar.png')
+                            p JULY 2, 2013
+                        div.blog-post-info
+                            img(src='images/author.png')
+                            p MICHAEL REIMER
+                        div.blog-post-info
+                            img(src='images/category.png')
+                            p WEBSITE RELEASES
+                        div.blog-post-info
+                            img(src='images/comment.png')
+                            p 2 COMMENTS
+                        p.my-p30 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nisi eget lectus iaculis congue. Nullam eleifend congue turpis, vel scelerisque massa fermentum ac ...
+
+
+                    div.blog-post
+                        h3 POST EXAMPLE WITH NO FEATURED IMAGE
+                        div.blog-post-info
+                            img(src='images/calendar.png')
+                            p JULY 2, 2013
+                        div.blog-post-info
+                            img(src='images/author.png')
+                            p MICHAEL REIMER
+                        div.blog-post-info
+                            img(src='images/category.png')
+                            p WEBSITE RELEASES
+                        div.blog-post-info
+                            img(src='images/comment.png')
+                            p 2 COMMENTS
+                        p.my-p30 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nisi eget lectus iaculis congue. Nullam eleifend congue turpis, vel scelerisque massa fermentum ac ...
+
+
+                    div.blog-post
+                        video(width='750' height='400' controls)
+                            source(src='#' type='video/mp4')
+                        h3 VIDEO POST EXAMPLE
+                        div.blog-post-info
+                            img(src='images/calendar.png')
+                            p JULY 2, 2013
+                        div.blog-post-info
+                            img(src='images/author.png')
+                            p MICHAEL REIMER
+                        div.blog-post-info
+                            img(src='images/category.png')
+                            p WEBSITE RELEASES
+                        div.blog-post-info
+                            img(src='images/comment.png')
+                            p 2 COMMENTS
+                        p.my-p30 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nisi eget lectus iaculis congue. Nullam eleifend congue turpis, vel scelerisque massa fermentum ac ...
+
+
+                    div.blog-post
+                        audio(controls)
+                            source(src='#' type="audio/mpeg")
+                        h3 AUDIO CLIP POST EXAMPLE
+                        div.blog-post-info
+                            img(src='images/calendar.png')
+                            p JULY 2, 2013
+                        div.blog-post-info
+                            img(src='images/author.png')
+                            p MICHAEL REIMER
+                        div.blog-post-info
+                            img(src='images/category.png')
+                            p WEBSITE RELEASES
+                        div.blog-post-info
+                            img(src='images/comment.png')
+                            p 2 COMMENTS
+                        p.my-p30 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed nisi eget lectus iaculis congue. Nullam eleifend congue turpis, vel scelerisque massa fermentum ac ...
+
+
+                    div.pagination
+                        a 1
+                        a.active 2
+                        a 3
+                        a 4
+                        a 5
+
+
+                <!-- SIDEBAR START -->
+                div.col-md-4.mt-p30
+                    h3 POPULAR POSTS
+                        p.post
+                            a(href='#') New Premium WordPress Theme - Blaco
+                        p.post
+                            a(href='#') Top Web Trends of 2013
+                        p.post
+                            a(href='#') Video Post Example
+                        p.post
+                            a(href='#') How Important is Twitter
+                        p.post
+                            a(href='#') Home Builders New Planning Solution
+
+                    h3.mt-p30 BLOG CATEGORIES
+                        p.mt-p30 News(4)
+                        p Website Releases(23)
+                        p Events(7)
+                        p Marketing(5)
+                        p Web Development(2)
+
+                    h3.mt-p30 ARCHIVES
+                        p.mt-p30 March(4)
+                        p April(5)
+                        p May(3)
+                        p June(4)
+                        p July(2)
+                    <!-- SIDEBAR END -->
+
+        <!-- CONTENT END -->
+
+
+        <!-- FOOTER START -->
+        div.footer
+            div.container
+                div.row.mt-p30
+                    div.col-md-5
+                        div.col-md-7
+                            h5.footer-headline Deliver
+                        div.col-md-5.footer-social
+                            a(href='http://twitter.com')
+                                div.social-icon
+                                    i(class="fa fa-twitter" aria-hidden="true")
+                            a(href='http://facebook.com')
+                                div.social-icon
+                                    i(class="fa fa-facebook" aria-hidden="true")
+                            a(href='index.html')
+                                div.social-icon
+                                    i(class="fa fa-rss" aria-hidden="true")
+
+                        div.col-md-12
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida quam quis nunc rutrum placerat. Proin eu mi vitae neque veh interdum id nec turpis nam auctor faucibus sollicitudin.
+
+                    div.col-md-2
+                        div.row
+                            h3 CONTACT INFO
+                            p.mb-m15 222 Ave C South
+                            p.mb-m15 Saskatoon, Saskatchewan
+                            p Canada S7K 2N5
+                            p info@deliver.ca
+                            p.white 1.306.222.3456
+
+                    div.col-md-2
+                        h3 QUICK LINKS
+                        p.mb-m15
+                            i(class="fa fa-angle-right white" aria-hidden="true")
+                                a(class='footer-link' href='portfolio.html') Portfolio
+                        p.mb-m15
+                            i(class="fa fa-angle-right white" aria-hidden="true")
+                                a(class='footer-link' href='about.html') About
+                        p.mb-m15
+                            i(class="fa fa-angle-right white" aria-hidden="true")
+                                a(class='footer-link' href='archive.html') Archive
+                        p.mb-m15
+                            i(class="fa fa-angle-right white" aria-hidden="true")
+                                a(class='footer-link' href='blog.html') Blog
+                        p.mb-m15
+                            i(class="fa fa-angle-right white" aria-hidden="true")
+                                a(class='footer-link' href='index.html') Dropdown
+                        p
+                            i(class="fa fa-angle-right white" aria-hidden="true")
+                                a(class='footer-link' href='contact-us.html') Contact Us
+
+                    div.col-md-3
+                        h3 NEWSLETTER
+                        p Lorem ipsum dolor sit amet dolor consectetur adipiscing elit.
+
+                        input(type='text' class='newsletter-input mt-p30' placeholder='Email')
+                        input(type='submit' class='btn' value='OK')
+
+                div.row
+                    div.col-md-6.footer-copyright COPYRIGHT 2013 <a class='white' href='index.html'>DELIVER</a>. ALL RIGHTS RESERVED.
+                    div.col-md-6.footer-copyright(align='right')
+                        a(href='about.html') ABOUT /&nbsp;
+                        a(href='#') PRIVACY POLICY /&nbsp;
+                        a(href='contact-us.html') CONTACT
+        <!-- FOOTER END -->
+
+
+        <!-- SLIDER JS -->
+        script(src='js/slider.js')
+        <!-- JS -->
+        script(src='js/global.js')

@@ -1,0 +1,237 @@
+doctype html
+html(lang='tr')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        meta(name='description' content='')
+        meta(name='keywords' content='')
+        meta(name='author' content='')
+        title Deliver | Home
+        <!-- Normalize & Grid -->
+        link(type='text/css' rel='stylesheet' href='styles/normalize.css')
+        link(type='text/css' rel='stylesheet' href='styles/grid.css')
+        <!-- Fonts -->
+        link(href='https://fonts.googleapis.com/css?family=Pacifico&amp;subset=latin-ext' rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Roboto:100,300&amp;subset=latin-ext' rel='stylesheet')
+        link(href='fonts/MyFontsWebfontsKit.css' rel='stylesheet')
+        <!-- FontAwesome -->
+        link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+        <!-- Css -->
+        link(type='text/css' rel='stylesheet' href='styles/main.css')
+        <!-- Favicon -->
+        link(rel='icon' href='favicon.ico' type='image/x-icon')
+        link(rel='shortcut icon' href='favicon.ico' type='image/x-icon')
+    body
+        <!-- SLIDER START -->
+        div.slider-container
+            <!-- IMAGES -->
+            div.slideshow
+                img(src='images/slider-1.png' width='100%')
+                div.text
+                    h1 WE <a class='light-green'>DELIVER</a> NOTHING SHORT OF AWESOME!
+                    p.white Check out our portfolio to see our great work.
+                    a(class='btn-transparent' href='portfolio.html') PORTFOLIO
+
+            div.slideshow
+                img(src='images/slider-2.png' width='100%')
+                div.text
+                    h1 OUR <a class='light-green'>BLOG</a>
+                    p.white Our blog Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    a(class='btn-transparent' href='blog.html') OUR BLOG
+
+            div.slideshow
+                img(src='images/blog-post-2.png' width='100%')
+                div.text
+                    h1 OUR <a class='light-green'>SERVICES</a>
+                    p.white Services Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.
+                    a(class='btn-transparent' href='portfolio.html') SERVICES
+
+            div.slideshow
+                img(src='images/blog-post-1.png' width='100%')
+                div.text
+                    h1 CONTACT US
+                    p.white Contact us Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.
+                    a(class='btn-transparent' href='portfolio.html') CONTACT US
+
+            <!-- NEXT AND PREVIOUS BUTTONS -->
+            a(class='prev' onclick='slidearrow(-1)')
+                img(src='images/previous.png')
+            a(class='next' onclick='slidearrow(1)')
+                img(src='images/next.png')
+
+            <!-- THE DOTS/CIRCLES -->
+            div.slider-dot
+                span(class='dot' onclick='slidedot(1)')
+                span(class='dot' onclick='slidedot(2)')
+                span(class='dot' onclick='slidedot(3)')
+                span(class='dot' onclick='slidedot(4)')
+
+            <!-- HEADER START -->
+            header
+                div.container
+                    div.row
+                        div.col-xs-12.col-sm-12.col-md-12.col-lg-12
+                            div.header Deliver
+                                a(href='index.html')
+                                    div.social-icon
+                                        i(class="fa fa-rss" aria-hidden="true")
+                                a(href='http://facebook.com')
+                                    div.social-icon
+                                        i(class="fa fa-facebook" aria-hidden="true")
+                                a(href='http://twitter.com')
+                                    div.social-icon
+                                        i(class="fa fa-twitter" aria-hidden="true")
+            <!-- HEADER END -->
+
+
+            <!-- NAV START -->
+            div.container
+                nav
+                    a(class='nav light-green' href='index.html') HOME
+                    a(class='nav' href='portfolio.html') PORTFOLIO
+                    a(class='nav' href='about.html') ABOUT
+                    a(class='nav' href='services.html') SERVICES
+                    a(class='nav' href='archive.html') ARCHIVE
+                    a(class='nav' href='blog.html') BLOG
+                    a(class='nav' href='other-pages.html') OTHER PAGES
+                    a(class='nav' href='contact-us.html') CONTACT US
+                    i(class="fa fa-search" aria-hidden="true" onclick='searchinput()')
+                    input(type="hidden" id="search")
+            <!-- NAV END -->
+        <!-- SLIDER END -->
+        
+
+
+        <!-- CONTENT START -->
+        div.container
+            div.col-xs-12.col-sm-12.col-md-12.col-lg-12
+                div.explanation
+                    h1 WE ARE A SMALL TEAM DOING BIG THINGS!
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.
+
+
+
+        div.container
+            div.row
+                div.col-md-4.services-home
+                    img(src='images/services-home-1.png')
+                    h3 SERVICE 1
+                    p Lorem ipsum dolor sit amet, consectetur praseinti adipiscing elit. Praesent lato justo ligula, interdu ut lobortis quis dolor amet.
+                    a(href='#' class='light-green') Find Out More
+
+                div.col-md-4.services-home
+                    img(src='images/services-home-2.png')
+                    h3 SERVICE 3
+                    p Lorem ipsum dolor sit amet, consectetur praseinti adipiscing elit. Praesent lato justo ligula, interdu ut lobortis quis dolor amet.
+                    a(href='#' class='light-green') Find Out More
+
+                div.col-md-4.services-home
+                    img(src='images/services-home-3.png')
+                    h3 SERVICE 3
+                    p Lorem ipsum dolor sit amet, consectetur praseinti adipiscing elit. Praesent lato justo ligula, interdu ut lobortis quis dolor amet.
+                    a(href='#' class='light-green') Find Out More
+
+
+        div.container-fluid.portfolio-home.mt-p30
+            div.container
+                div.row
+                    div.portfolio-home-head
+                        h2 SOME OF OUR LATEST WORK
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.
+
+                    div.col-md-4
+                        img(src='images/portfolio-home-1.png')
+                        h3 CIRCLE ICONS
+
+                    div.col-md-4
+                        img(src='images/portfolio-home-2.png')
+                        h3 ARROWS
+
+                    div.col-md-4
+                        img(src='images/portfolio-home-3.png')
+                        h3 PORTFOLIO THEME
+
+
+
+        div.container
+            div.row
+                div.col-md-12
+                    div.explanation-top
+                        h1 DO YOU LIKE WHAT YOU SEE?
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet rutrum est pretium.
+
+                        input(type='button' class='btn-light-green' value='PURCHASE')
+        <!-- CONTENT END -->
+
+
+        <!-- FOOTER START -->
+        div.footer
+            div.container
+                div.row.mt-p30
+                    div.col-md-5
+                        div.col-md-7
+                            h5.footer-headline Deliver
+                        div.col-md-5.footer-social
+                            a(href='http://twitter.com')
+                                div.social-icon
+                                    i(class="fa fa-twitter" aria-hidden="true")
+                            a(href='http://facebook.com')
+                                div.social-icon
+                                    i(class="fa fa-facebook" aria-hidden="true")
+                            a(href='index.html')
+                                div.social-icon
+                                    i(class="fa fa-rss" aria-hidden="true")
+
+                        div.col-md-12
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida quam quis nunc rutrum placerat. Proin eu mi vitae neque veh interdum id nec turpis nam auctor faucibus sollicitudin.
+
+                    div.col-md-2
+                        div.row
+                            h3 CONTACT INFO
+                            p.mb-m15 222 Ave C South
+                            p.mb-m15 Saskatoon, Saskatchewan
+                            p Canada S7K 2N5
+                            p info@deliver.ca
+                            p.white 1.306.222.3456
+
+                    div.col-md-2
+                        h3 QUICK LINKS
+                        p.mb-m15
+                            i(class="fa fa-angle-right white" aria-hidden="true")
+                                a(class='footer-link' href='portfolio.html') Portfolio
+                        p.mb-m15
+                            i(class="fa fa-angle-right white" aria-hidden="true")
+                                a(class='footer-link' href='about.html') About
+                        p.mb-m15
+                            i(class="fa fa-angle-right white" aria-hidden="true")
+                                a(class='footer-link' href='archive.html') Archive
+                        p.mb-m15
+                            i(class="fa fa-angle-right white" aria-hidden="true")
+                                a(class='footer-link' href='blog.html') Blog
+                        p.mb-m15
+                            i(class="fa fa-angle-right white" aria-hidden="true")
+                                a(class='footer-link' href='index.html') Dropdown
+                        p
+                            i(class="fa fa-angle-right white" aria-hidden="true")
+                                a(class='footer-link' href='contact-us.html') Contact Us
+
+                    div.col-md-3
+                        h3 NEWSLETTER
+                        p Lorem ipsum dolor sit amet dolor consectetur adipiscing elit.
+
+                        input(type='text' class='newsletter-input mt-p30' placeholder='Email')
+                        input(type='submit' class='btn' value='OK')
+
+                div.row
+                    div.col-md-6.footer-copyright COPYRIGHT 2013 <a class='white' href='index.html'>DELIVER</a>. ALL RIGHTS RESERVED.
+                    div.col-md-6.footer-copyright(align='right')
+                        a(href='about.html') ABOUT /&nbsp;
+                        a(href='#') PRIVACY POLICY /&nbsp;
+                        a(href='contact-us.html') CONTACT
+        <!-- FOOTER END -->
+
+
+        <!-- SLIDER JS -->
+        script(src='js/slider.js')
+        <!-- JS -->
+        script(src='js/global.js')
